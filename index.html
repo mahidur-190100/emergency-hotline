@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-     <!-- daisyui -->
+    <!-- daisyui -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@5"
       rel="stylesheet"
@@ -20,63 +20,92 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-</head>
-<body class="bg-[#bfd0c7] h-[150vh]">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-[#bfd0c7] h-[150vh]">
+
+
+    <!-- navbar -->
     <nav class="flex justify-between items-center max-w-l mx-auto bg-white">
-        <div class="flex items-center" >
-            <img class="h-[50px] ml-8 my-5" src="./assets/logo.png" alt="">
-            <h1 class="ml-4 font-bold text-[#006747] ">EMERGENCY <br> SERVICE</h1>
-        </div>
-        <div class="my-5 mr-8">
-            <button class="btn btn-accent bg-[#41ff6b1a] mr-5 rounded-xl"><span>0</span>
-            <i class="fa-solid fa-heart text-[#ed1c24]"></i></button>
-            <button class="btn btn-accent bg-[#41ff6b1a] mr-5 rounded-xl"><span>100</span>
-            <i class="fa-solid fa-coins text-[#fcd227]"></i></button>
-            <button class="btn btn-success bg-[#00a63e] rounded-xl"><span>0</span>Copy</button>
-
-        </div>
+      <div class="flex items-center">
+        <img class="h-[50px] ml-8 my-5" src="./assets/logo.png" alt="" />
+        <h1 class="ml-4 font-bold text-[#006747]">
+          EMERGENCY <br />
+          SERVICE
+        </h1>
+      </div>
+      <div class="my-5 mr-8">
+        <button class="btn btn-accent bg-[#41ff6b1a] mr-5 rounded-xl">
+          <span>0</span> <i class="fa-solid fa-heart text-[#ed1c24]"></i>
+        </button>
+        <button class="btn btn-accent bg-[#41ff6b1a] mr-5 rounded-xl">
+          <span>100</span> <i class="fa-solid fa-coins text-[#fcd227]"></i>
+        </button>
+        <button class="btn btn-success bg-[#00a63e] rounded-xl">
+          <span>0</span>Copy
+        </button>
+      </div>
     </nav>
-    
+    <!-- body part -->
+    <div
+      class="bg-gradient-to-b from-[#013223] via-[#006747] to-[#013223] min-h-50"
+    >
+      <div class="pt-4">
+        <img class="h-[80px] mx-auto" src="./assets/logo-dark.png" alt="" />
+        <h1 class="text-center mt-2 text-[40px] text-[#ffffff] font-['Hind_Madurai']">
+          Emergency Service Directory
+        </h1>
+        <p class="text-center font-['Hind_Madurai'] text-[#ffffff]">
+          Government Emergency Services at Your Fingertip – A Project by
+          Government of the People’s Republic of Bangladesh
+        </p>
+      </div>
+    </div>
 
 
 
+    <!-- card er jamela -->
+     <div class="flex justify-between mt-3" >
+        <!-- card1 -->
+         <div class="border-2 border-red-500 min-w-[100px] ">
+            <p>i love mirgi</p>
+            <div class="flex justify-between items-center  ">
+                <img class="h-[30px]" src="/assets/emergency.png" alt="">
+            <i class="fa-solid fa-heart text-[#ffffff]"></i>
+            </div>
+            <div>
+                <h1>National Emergency Number</h1>
+                <p>National Emergency</p>
+                <p>999</p>
+                <button class="btn btn-success bg-[#00a63e] rounded-xl">
+          ALL
+        </button>
+        <!-- card button -->
+        <div>
+            <button class="btn btn-success bg-[#00a63e] rounded-xl">
+          ALL
+        </button>
+        <button class="btn btn-success bg-[#00a63e] rounded-xl">
+          ALL
+        </button>
+        </div>
+        </div>
+        
 
+         </div>
+         <!-- call history -->
+          <div>
+            <h1> call history</h1>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+          </div>
+     </div>
 
     <script src="./index.js"></script>
-</body>
+  </body>
 </html>
