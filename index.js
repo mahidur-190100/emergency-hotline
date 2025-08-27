@@ -26,3 +26,13 @@ let callButtons = document.getElementsByClassName("call-btn");
         alert("Calling " + serviceName + "\nNumber: " + callNumber);
     });
 }
+
+// copy button count
+let copyCount = parseInt(document.getElementById("main-copy").innerText);
+let copyButtons = document.getElementsByClassName("copy-btn");
+    for (const btn of copyButtons){
+        btn.addEventListener("click",function(e){
+            copyCount+= 1;
+            document.getElementById("main-copy").innerText = copyCount
+        })
+    }
