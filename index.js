@@ -33,7 +33,7 @@ for (const btn of callButtons) {
       second: "2-digit",
     });
     let historyItem = document.createElement("div");
-    historyItem.className = "bg-gray-50 rounded-lg shadow-md p-3 mb-3"; // card styles
+    historyItem.className = "bg-gray-50 rounded-lg shadow-md p-3 mb-3"; 
     historyItem.innerHTML =
       '<div class="flex justify-between items-center">' +
       '<span class="font-bold">' +
