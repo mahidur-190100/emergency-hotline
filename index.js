@@ -1,19 +1,28 @@
 // heart count
-let heartCount = parseInt(document.getElementById("main-heart").innerText); // Initialize counter to 0
-function heart_count(id) {
-    document.getElementById(id).addEventListener("click", function(e) {
-        // e.preventDefault();
-        heartCount += 1;
-        document.getElementById("main-heart").innerText = heartCount;
+let heartCount = parseInt(document.getElementById("main-heart").innerText);
+let heartButtons = document.getElementsByClassName("heart-btn");
+    for (const btn of heartButtons){
+        btn.addEventListener("click",function(e){
+            heartCount+= 1;
+            document.getElementById("main-heart").innerText = heartCount
+        })
+    }
+
+   
+// coin count
+let coinCount = parseInt(document.getElementById("main-coin").innerText);
+let callButtons = document.getElementsByClassName("call-btn");
+    for (const btn of callButtons){
+    btn.addEventListener("click", function(e) {
+        coinCount -= 20;
+        if(coinCount < 0){
+            alert ("Insufficient coin")
+            return
+        }
+        document.getElementById("main-coin").innerText = coinCount;
+        let card = btn.closest(".bg-white");
+        let serviceName = card.querySelector("h1").innerText;
+        let callNumber = card.querySelector(".text-3xl").innerText;
+        alert("Calling " + serviceName + "\nNumber: " + callNumber);
     });
 }
-
-heart_count("heart1");
-heart_count("heart2");
-heart_count("heart3");
-heart_count("heart4");
-heart_count("heart5");
-heart_count("heart6");
-heart_count("heart7");
-heart_count("heart8");
-heart_count("heart9");
